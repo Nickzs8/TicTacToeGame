@@ -17,7 +17,7 @@ public class JogoDaVelha{
 		
 		frame.getContentPane().setBackground(Color.black);
 		frame.setLayout(new GridLayout(3,3,10,10));
-		final Logica logicaOriginal = new Logica();
+		final Logica logicaOriginal = new Logica(frame);
 		GameTile[][] jogo = new GameTile[numeroLinhas][numeroColunas];
 		
 		for (int i = 0; i<3;i++) {

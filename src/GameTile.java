@@ -62,24 +62,21 @@ public class GameTile extends JPanel implements MouseListener{
 			
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		if(marcado == true) {
-			return;
-		}
-		
+		if(marcado == true) return;
 		
 		preview = false;
-		repaint();
 		
 		this.setBackground(Color.WHITE);
+		repaint();
 		
 		if(logica.turnoJogador == 0) {
 			formaMarcada = 1;
 		} else {
 			formaMarcada = 2;
 		}
-	//	logica.checkVictory(this.jogo, this, this.x, this.y);
 	}
 
+	
 	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
